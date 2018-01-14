@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+<div id="paragraph">
+    <p>{{message}}</p>
+    <input type="text" v-model="message">
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+<script>
+    var paragraph = new Vue({
+        el: "#paragraph",
+        data: {
+            message: 'hello word!'
+        },
+//        methods: {
+//            messageReverse: function () {
+//                this.message = this.message.split('').reverse().join('')
+//            }
+//        }
+    })
+//    paragraph.mueee = false
+
+</script>
+</body>
+</html>
